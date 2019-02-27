@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	answer1="Geneva"
+function test(form){
+	for (i=0; i<3; i++){
+	if(form.elements[i].checked){
+		if(form.elements[i].value==answer1){
+		alert("Correct");}
+	else {alert("Incorrect the correct answer is" +answer1);
+}
+}
+}
+}
+answer2="Nairobi"
+function sit(form){
+	for (i=3; i<6; i++){
+	if(form.elements[i].checked){
+		if(form.elements[i].value==answer2){
+		alert("Correct");}
+	else {alert("Incorrect the correct answer is" +answer2);
+}
+}
+}
+}
+</script>
+
+</head>
+
+<body>
+<form>
+	Q.1 What is the capital city of Switzerland?<br>
+
+   <input name="Radio1" type="radio" value="Zanzibar">Zanzibar<br>
+   <input name="Radio1" type="radio" value="Geneva">Geneva<br>
+   <input name="Radio1" type="radio" value="Nairobi">Nairobi<br><br>
+   <input name="Submit1" type="submit" value="submit" onclick="test(this.form)"><br><br>
+
+Q.2 What is the capital city of Kenya?<br>
+
+   <input name="Radio2" type="radio" value="Zanzibar">Zanzibar<br>
+   <input name="Radio2" type="radio" value="Geneva">Geneva<br>
+   <input name="Radio2" type="radio" value="Nairobi">Nairobi<br><br>
+   <input name="Submit1" type="submit" value="submit" onclick="sit(this.form)">
+
+   
+ </form>
+</body>
+</html>
+
+
